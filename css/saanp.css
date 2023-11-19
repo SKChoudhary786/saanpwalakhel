@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/gaze.jpg.png"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    color: blue;
+    background-color: whitesmoke;
+    border: 3px solid burlywood;
+    border-radius: 40px;
+    bottom: 155px;
+    left: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    color: crimson;
+    background-color: whitesmoke;
+    border: 3px solid burlywood;
+    border-radius: 40px;
+    bottom: 70px;
+    left: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#board{
+    background-image: url("../img/images.jpeg");
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid rgb(233, 173, 94);
+    box-shadow:3px 2px brown;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(252, 5, 5), rgb(0, 66, 26));
+    border: 3px solid rgb(1, 46, 18); 
+    box-shadow:1px 1px darkgreen;
+    transform: scale(1);
+    border-radius: 100px;
+}
+
+.snake{
+    background: linear-gradient(rgb(12, 2, 2), rgb(1, 87, 75));
+    border: 3px solid rgb(1, 46, 18); 
+    border-radius: 100px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 100px;
+}
